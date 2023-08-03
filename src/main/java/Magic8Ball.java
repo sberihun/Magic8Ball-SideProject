@@ -3,13 +3,9 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.SortedMap;
 
-/*
- * Create a Magic 8-ball program that gives custom responses to yes or no questions
- * To get a response from the user, use the getUserQuestion() method at the bottom of this file
- */
-public class Magic8Ball {
 
-    // 1. Make a main method that includes all the steps below
+public class Magic8Ball {
+    
     public static void main(String[] args) {
 
         System.out.println("Enter a question for the Magic 8-Ball...");
