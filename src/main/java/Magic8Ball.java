@@ -1,5 +1,7 @@
+import java.sql.SQLOutput;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.SortedMap;
 
 /*
  * Create a Magic 8-ball program that gives custom responses to yes or no questions
@@ -8,40 +10,25 @@ import java.util.Scanner;
 public class Magic8Ball {
 
     // 1. Make a main method that includes all the steps below
+    public static void main(String[] args) {
 
-    // 2. Ask the user to enter a question for the magic 8-ball
+        System.out.println("Enter a question for the Magic 8-Ball...");
 
+        String userQuestion = getUserQuestion();
 
-    // 3. Call the getUserQuestion() method to get a question from the user
-    //    String userQuestion = getUserQuestion();
+        int randNumber = new Random().nextInt(4);
 
+        if(randNumber == 0){
+            System.out.println("Yes");
+        }if (randNumber == 1){
+            System.out.println("No");
+        }if(randNumber == 2){
+            System.out.println("Never in a million years...");
+        }if(randNumber == 3){
+            System.out.println("Perhaps...");
+        }
 
-    // 4. Make a variable and initialize it to a random number
-    //
-    //    // Get random a number from: [0, 1, 2, 3]
-    //    int randNumber = new Random().nextInt(4);
-
-
-    // 5. If the random number is 0
-
-        // Tell the user "Yes"
-
-
-    // 6. If the random number is 1
-
-        // Tell the user "No"
-
-
-    // 7. If the random number is 2
-
-        // Tell the user a custom response
-
-
-    // 8. If the random number is 3
-
-        // Tell the user a custom response
-
-
+    }
     /**
      * @return The user's response as a String
      */
@@ -50,6 +37,7 @@ public class Magic8Ball {
         String question = scanner.nextLine();
         return question;
     }
+
 }
 
 
